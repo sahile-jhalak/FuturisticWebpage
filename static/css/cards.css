@@ -1,0 +1,20 @@
+.card {
+	overflow: hidden;
+}
+
+.card-title,
+.card-text {
+	overflow: hidden;
+	color: white;
+}
+.card.item {
+	
+	box-shadow: 0 0 3rem rgba(13, 201, 13, 0.493);
+	border: rgb(31, 192, 31);
+	transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card.item:hover {
+	transform: scale(1.07, 1.07);
+	box-shadow: 0 0 5rem rgb(31, 192, 31);
+}

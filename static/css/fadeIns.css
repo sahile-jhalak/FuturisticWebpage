@@ -1,0 +1,74 @@
+.fade-in-left {
+	transition: translateY(-50%);
+}
+.fade-in-right {
+	transition: translateY(50%);
+}
+
+.fade-in-left,
+.fade-in-right {
+	color: whitesmoke;
+	font-family: "Avenir", monospace;
+	opacity: 0;
+	transition: opacity 250ms ease-in, transform 400ms ease-in;
+}
+.fade-in-left.appear,
+.fade-in-right.appear {
+	transform: translateY(0);
+	opacity: 1;
+}
+.fade-img {
+	overflow: hidden;
+	border: 5px solid whitesmoke;
+	border-radius: 1%;
+	object-fit: cover;
+}
+.top-img {
+	opacity: 1;
+	z-index: 2;
+	transition: opacity 1s ease-in-out;
+}
+.bottom-img-left {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	size: inherit;
+}
+.bottom-img-right {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	size: inherit;
+}
+.top-img:hover {
+	opacity: 1;
+}
+
+.fade-text {
+	padding: 2%;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.fade-text p{
+	background-color: transparent;
+	font-family: 'Avenir';
+	font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 500px) {
+	.fade-text p{
+		background-color: transparent;
+		font-family: 'Avenir';
+		font-size: 1rem;
+	}
+  }
+@media only screen and (max-width: 400px) {
+	.fade-text p{
+		background-color: transparent;
+		font-family: 'Avenir';
+		font-size: 1rem;
+		padding: 3%;
+	}
+  }

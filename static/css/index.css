@@ -1,0 +1,129 @@
+:root {
+	--animation-width: 80%;
+	--animation-height: 10%;
+	--animation-border-color: white;	
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* background-color:#D8D8D8 ; */
+	background-color: #131a22;
+	overflow-x: hidden;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url(../../assets/fonts/AvenirLTStd-Roman.otf)
+			format("opentype"),
+		url(../../assets/fonts/AvenirLTStd-Black.otf)
+			format("opentype"),
+		url(../../assets/fonts/AvenirLTStd-Book.otf)
+			format("opentype");
+}
+
+.banner {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	top: 0%;
+}
+
+.banner video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.banner-content {
+	width: 100%;
+	position: absolute;
+	margin-top: -20%;
+}
+.banner-heading {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20%;
+	color: whitesmoke;
+	background-color: transparent;
+	overflow: hidden;
+	padding: 3%;
+}
+
+.banner-subheading {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	color: white;
+	overflow: hidden;
+	padding: 1%;
+}
+.fcontainer {
+	display: flex;
+	margin-top: 0;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.item {
+	margin: 5%;
+background-color: #131a22;
+
+}
+
+.avenir {
+	color: white;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	align-self: center;
+	margin-left: -100px;
+	background-color: transparent;
+	font-family: "Avenir", sans-serif;
+}
+
+#base-container {
+	/* background: url(https://www.munichre.com/topics-online/en/digitalisation/tech-trend-radar-future-technologies-2019/_jcr_content/teaser/teaser16x9.png); */
+	background: url(../../assets/base_container_bg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	background-color: transparent;
+	font-family: avenir;
+}
+
+.button{
+    display: flex;
+    background-color: #FEBD69;
+    justify-content: center;
+    width: 100%;
+    color:#131A22;
+    font-weight: 500;
+}
+.button span {
+	background-color: transparent;
+	color: black;
+}
+@media only screen and (max-width: 500px) {
+	p{
+		font-size: small;
+	}
+  }
+@media only screen and (max-width: 400px) {
+	p{
+		font-size: smaller;
+	}
+  }
